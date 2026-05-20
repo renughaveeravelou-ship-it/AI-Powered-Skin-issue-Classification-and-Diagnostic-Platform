@@ -842,3 +842,6 @@ if __name__=='__main__':
     # Run the server locally on thread-safe mode
     # use_reloader=False prevents Flask from starting a second process and importing TensorFlow twice
     app.run(debug=True, use_reloader=False, threaded=False)
+
+
+    #run this command 
