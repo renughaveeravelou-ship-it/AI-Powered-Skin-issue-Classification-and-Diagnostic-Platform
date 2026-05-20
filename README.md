@@ -1,92 +1,84 @@
-# Skin Disease Prediction
+# AI-Based Skin Disease Prediction System
 
-This repository contains a deep learning project that uses a Convolutional Neural Network (CNN) to detect various skin diseases from images. The goal of this project is to assist healthcare professionals by providing a model that can classify skin diseases, enhancing accessibility to diagnostics through machine learning.
+This repository contains a Flask-based deep learning application for automated skin disease classification using TensorFlow and CNN models. The system performs image-based prediction, Grad-CAM explainability visualization, lesion segmentation using OpenCV, and generates clinical-style PDF reports.
+---
 
-## Table of Contents
+## 📌 Features
 
-   Overview
-   
-   Dataset
-   
-   Model Architecture
-   
-   Technologies Used
-   
-   Results
-   
-   Installation
-   
-   Usage
-   
-  
-## Overview
+- Skin disease prediction using CNN model
+- Grad-CAM heatmap visualization
+- Lesion segmentation using OpenCV
+- User authentication system
+- AI skincare chatbot
+- PDF medical report generation
+- Dashboard with scan history
+- Multiple AI engines support
+  - Local CNN
+  - Ensemble Model
+  - Gemini API
+  - OpenAI API
 
-Skin disease detection is crucial for early diagnosis and treatment. This project implements a CNN model to classify images into five skin disease categories with an accuracy of approximately 70%. The model is deployed via a user-friendly web application built with Flask, enabling users to upload images and receive real-time predictions.
+---
 
-## Dataset
+## 🛠️ Technologies Used
 
-Source: The dataset used in this project contains images of skin diseases across five categories.
+### Frontend
+- HTML
+- CSS
+- JavaScript
+- Bootstrap
 
-Size: 500 images.
+### Backend
+- Python
+- Flask
 
-Preprocessing: Images were resized and normalized. Data augmentation techniques were applied to improve model robustness.
-## Model Architecture
+### AI / Machine Learning
+- TensorFlow
+- Keras
+- OpenCV
+- NumPy
 
-The model uses a Convolutional Neural Network (CNN) implemented with TensorFlow and Keras, optimized for image classification tasks. The architecture includes:
+### Database
+- SQLite
 
-Multiple convolutional layers with ReLU activations and max pooling.
+### APIs
+- Gemini API
+- OpenAI API
 
-Dense layers for classification, with a final softmax layer for outputting probabilities across the five categories.
+---
 
-Data augmentation for reducing overfitting.
+## 📂 Project Structure
 
-### Key Layers:
-Convolutional Layers: For feature extraction from images.
-
-Pooling Layers: To reduce the spatial dimensions of the feature maps.
-
-Dense Layers: Fully connected layers for decision-making.
-## Technologies Used
-
-Python: For programming.
-
-TensorFlow & Keras: For building and training the CNN model.
-
-Flask: For deploying the model as a web application.
-
-Pandas & NumPy: For data processing.
-
-Matplotlib & Seaborn: For visualization and analysis.
-## Results
-
-Accuracy: Achieved a 70% classification accuracy across five skin disease types.
-
-Evaluation: Model performance was assessed using metrics such as accuracy and a confusion matrix.
-
-Challenges: The limited size of the dataset posed challenges for generalization, addressed by data augmentation.
-
-## Installation
-
-To run this project locally, follow these steps:
-
-### 1. Clone the repository:
-            git clone https://github.com/varshitha-g/Skin-Disease-Prediction.git
-            cd Skin-Disease-Prediction
-### 2. Create a virtual environment:
-            python -m venv env
-            source env/bin/activate  # On Windows, use `env\Scripts\activate`
-### 3. Install the dependencies:
-            pip install -r requirements.txt
-## Usage
-
-### 1. Training the Model: Run train.py to train the model using the dataset.
-                     python train.py
-### 2. Running the Flask App: To start the web application and make predictions through the UI, run:
-                     python app.py
-Open your browser and navigate to http://127.0.0.1:5000 to access the application.
-### 3. Uploading Images: 
-
-Use the interface to upload images of skin lesions, and the model will return a classification along with a confidence score.
-
-
+```bash
+DermShield-AI/
+│
+├── app.py                     # Main Flask application
+├── database.py                # Database operations
+├── skindisease.h5             # Trained CNN model
+├── requirements.txt           # Python dependencies
+├── README.md                  # Project documentation
+│
+├── uploads/                   # Uploaded images & reports
+│   ├── heatmap_images/
+│   ├── segmentation_images/
+│   └── reports/
+│
+├── frontend/
+│   └── dist/
+│       ├── index.html
+│       ├── assets/
+│       ├── css/
+│       └── js/
+│
+├── templates/
+│   └── base.html
+│
+├── static/
+│   ├── sw.js
+│   ├── css/
+│   ├── js/
+│   └── images/
+│
+└── database/
+    └── users.db
 
