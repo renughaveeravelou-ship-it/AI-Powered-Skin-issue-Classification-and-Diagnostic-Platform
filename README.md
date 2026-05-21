@@ -45,70 +45,70 @@ This repository contains a Flask-based deep learning application for automated s
 - Gemini API
 - OpenAI API
 
-###Installation
--1️ Clone Repository
--git clone https://github.com/your-username/DermShield-AI.git
--cd DermShield-AI
+Installation
+1️ Clone Repository
+git clone https://github.com/your-username/DermShield-AI.git
+cd DermShield-AI
 
--2️ Create Virtual Environment
--python -m venv venv
+2️ Create Virtual Environment
+python -m venv venv
 
--3️ Activate Virtual Environment
+3️ Activate Virtual Environment
 Windows
--venv\Scripts\activate
--Linux/Mac
--source venv/bin/activate
+venv\Scripts\activate
+Linux/Mac
+source venv/bin/activate
 
--4️ Install Dependencies
+4️ Install Dependencies
 -pip install -r requirements.txt
 
--Run the Project
--python app.py
+Run the Project
+python app.py
 
--Open browser:
--http://127.0.0.1:5000
+Open browser:
+http://127.0.0.1:5000
 
-###3Supported Skin Diseases
--Acne
--Melanoma
--Peeling Skin
--Ringworm
--Vitiligo
+3 Supported Skin Diseases
+Acne
+Melanoma
+Peeling Skin
+Ringworm
+Vitiligo
 
-####AI Features
--Grad-CAM Visualization
--Highlights infected regions detected by the CNN model.
+AI Features
+Grad-CAM Visualization
+Highlights infected regions detected by the CNN model.
 
--Lesion Segmentation
--Uses OpenCV image processing for lesion boundary detection.
+Lesion Segmentation
+Uses OpenCV image processing for lesion boundary detection.
 
--AI Chatbot
--Provides skincare suggestions and guidance.
+AI Chatbot
+Provides skincare suggestions and guidance.
 
-####PDF Report Generation
--The system generates:
--Diagnosis report
--Confidence scores
--Heatmap analysis
--Clinical recommendations
+PDF Report Generation
+The system generates:
+Diagnosis report
+Confidence scores
+Heatmap analysis
+Clinical recommendations
 
-####Authentication Features
--User Registration
--Login System
--Session Management
--Scan History Dashboard
+Authentication Features
+User Registration
+Login System
+Session Management
+Scan History Dashboard
 
-####Future Improvements
--Mobile App Integration
--More Skin Disease Classes
--Cloud Deployment
--Real-time Camera Detection
+Future Improvements
+Mobile App Integration
+More Skin Disease Classes
+Cloud Deployment
+Real-time Camera Detection
 Doctor Appointment Integration
 
-#####Author
+Author
 -Renugha v
 
-#####License
+License
 -This project is for educational and research purposes only.
 
 ---
