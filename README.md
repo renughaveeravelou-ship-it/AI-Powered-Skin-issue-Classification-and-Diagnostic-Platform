@@ -48,6 +48,7 @@ This repository contains a Flask-based deep learning application for automated s
 ---
 
 ##Installation
+
 ###1️ Clone Repository
 -git clone https://github.com/your-username/DermShield-AI.git
 -cd DermShield-AI
